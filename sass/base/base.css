@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #000000;
+}/*# sourceMappingURL=base.css.map */
