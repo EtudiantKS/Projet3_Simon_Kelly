@@ -1,0 +1,30 @@
+/* Localisation*/
+.localisation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #edecec;
+    box-shadow: inset 2px 7px 9px -9px rgb(115 115 115 / 75%);
+    padding: 15px;
+
+    &__recherche{
+        display: flex;
+        justify-content: center;
+    }
+
+    .fa-location-dot{
+        margin: 0px 6px 0px 6px;
+    }
+
+    input[type="search"]{
+        border: none;
+        background-color: #edecec;
+        width: 80%;
+        text-align: center;
+    }
+    ::placeholder{
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
