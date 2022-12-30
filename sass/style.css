@@ -7,8 +7,9 @@
 }
 
 #bloc-page {
-  max-width: 768px;
-  margin: auto;
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -80,19 +81,20 @@ h2 {
 /* Description */
 .description {
   width: 100%;
+  height: 260px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: red 248, 248, 248;
+  background-color: rgb(248, 248, 248);
 }
 .description__texte {
-  width: 80%;
+  width: 90%;
   font-size: 18px;
   font-weight: 300;
 }
 .description__button-menu {
-  color: #ffffff;
+  color: #FFF;
   font-size: 16px;
   border-radius: 25px;
   box-shadow: 0px 6px 8px 0px grey;
@@ -105,4 +107,36 @@ h2 {
   transform: scale(1.1);
 }
 
-/* Fonctionnement *//*# sourceMappingURL=style.css.map */
+/* Fonctionnement */
+.fonctionnement__selection {
+  width: 94%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 6px 8px 0px rgb(220, 220, 220);
+  margin: 15px 25px 25px 25px;
+  background: #f6f6f6;
+}
+.fonctionnement__selection--nombre {
+  position: absolute;
+  top: 23px;
+  left: -15px;
+  background-color: #9356DC;
+  color: #FFF;
+  border-radius: 50px;
+  font-size: 12px;
+  padding: 5px 9px 5px 9px;
+}
+.fonctionnement__selection--icone {
+  font-size: large;
+  padding: 0px 30px;
+}
+.fonctionnement__selection--icone i {
+  color: #5f5f5f;
+}
+.fonctionnement__selection--texte {
+  font-size: 12px;
+  padding: 0px 10px;
+}/*# sourceMappingURL=style.css.map */

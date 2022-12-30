@@ -32,20 +32,21 @@
 /* Description */
 .description{
     width: 100%;
+    height: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: red (248, 248, 248);
+    background-color: $colour-light-grey;
 
     &__texte{
-        width: 80%;
+        width: 90%;
         font-size: 18px;
         font-weight: 300;
     }
 
     &__button-menu{
-        color: #ffffff;
+        color: $colour-white;
         font-size: 16px;
         border-radius: 25px;
         box-shadow: 0px 6px 8px 0px grey;
@@ -59,6 +60,39 @@
     }
 }
 /* Fonctionnement */
-.fonctionnement {
+.fonctionnement{
+    &__selection{
+        width: 94%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 0px 6px 8px 0px rgb(220, 220, 220);
+        margin: 15px 25px 25px 25px;
+        background: #f6f6f6;
+    
+            &--nombre{
+            position: absolute;
+            top: 23px;
+            left: -15px;
+            background-color: $colour-primary;
+            color: $colour-white;
+            border-radius: 50px;
+            font-size: 12px;
+            padding: 5px 9px 5px 9px;
+            }
 
+            &--icone{
+                font-size: large;
+                padding: 0px 30px;
+            }
+            &--icone i {
+                color: darken($colour-light-grey, 60%);
+            }
+            &--texte{
+                font-size: 12px;
+                padding: 0px 10px;
+            }
+        }
 }
