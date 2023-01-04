@@ -63,7 +63,7 @@ h2 {
   display: flex;
   align-items: center;
 }
-.footer__menu h4 {
+.footer__menu h3 {
   color: #FFF;
   font-size: 16px;
   font-weight: 400;
@@ -137,11 +137,15 @@ h2 {
 }
 .description__button-menu {
   color: #FFF;
-  background: linear-gradient(170deg, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  background: linear-gradient(-5deg, #9356DC 2%, #b35cdc, #cf64dc, #e86edb, #ff79da);
   font-size: 16px;
   border-radius: 25px;
   box-shadow: 0px 6px 8px 0px grey;
   padding: 15px 25px 15px 25px;
+}
+.description__button-menu:hover {
+  opacity: 0.7;
+  box-shadow: 0px 6px 8px 0px black;
 }
 
 /* Fonctionnement */
@@ -186,7 +190,7 @@ h2 {
   padding: 0px 30px;
 }
 .fonctionnement__selection--icone i {
-  color: #5f5f5f;
+  color: #797979;
 }
 .fonctionnement__selection--texte {
   font-size: 12px;
