@@ -21,6 +21,8 @@ a:visited {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0px 20px 10px;
 }
 
 h2 {
@@ -38,6 +40,35 @@ h2 {
   font-family: "Shrikhand", cursive;
   font-size: 30px;
   font-weight: 300;
+}
+
+.footer {
+  background-color: #000;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  color: #FFF;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 270;
+  padding: 10px 20px 10px;
+}
+.footer__menu {
+  display: flex;
+  align-items: center;
+}
+.footer__menu h4 {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 30px;
+}
+.footer__menu--icone {
+  width: 30px;
+}
+.footer__menu--icone i {
+  color: #FFF;
 }
 
 /* Localisation*/
@@ -106,6 +137,11 @@ h2 {
 .fonctionnement {
   height: 360px;
 }
+.fonctionnement h2 {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
 .fonctionnement__selection {
   width: 90%;
   height: 70px;
@@ -151,6 +187,12 @@ h2 {
   display: flex;
   flex-direction: column;
   background: rgb(248, 248, 248);
+  padding: 0px 0px 40px;
+}
+.restaurants h2 {
+  width: 48%;
+  display: flex;
+  justify-content: space-around;
 }
 .restaurants__cards {
   width: 100%;
@@ -160,7 +202,7 @@ h2 {
   justify-content: center;
 }
 .restaurants__cards a {
-  width: 90%;
+  width: 94%;
   height: 225px;
 }
 .restaurants__card {

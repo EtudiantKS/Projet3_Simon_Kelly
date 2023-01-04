@@ -1,0 +1,29 @@
+.footer{
+    background-color: $colour-black;
+    &__logo{
+        font-family:'Shrikhand',cursive;
+        color: $colour-white;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 270;
+        padding: 10px 20px 10px;
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+    
+        h4{
+            color: $colour-white;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0;
+            line-height: 30px;
+        }
+        &--icone{
+            width: 30px;
+        i{
+            color: $colour-white;
+        }
+        }
+}
+}
