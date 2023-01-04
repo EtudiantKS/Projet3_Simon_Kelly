@@ -7,7 +7,7 @@
 }
 
 #bloc-page {
-  max-width: 992px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -63,17 +63,17 @@ h2 {
   text-align: center;
 }
 .localisation ::-moz-placeholder {
-  color: #000000;
+  color: #000;
   font-size: 16px;
   font-weight: 500;
 }
 .localisation :-ms-input-placeholder {
-  color: #000000;
+  color: #000;
   font-size: 16px;
   font-weight: 500;
 }
 .localisation ::placeholder {
-  color: #000000;
+  color: #000;
   font-size: 16px;
   font-weight: 500;
 }
@@ -103,6 +103,9 @@ h2 {
 }
 
 /* Fonctionnement */
+.fonctionnement {
+  height: 360px;
+}
 .fonctionnement__selection {
   width: 90%;
   height: 70px;
@@ -112,7 +115,7 @@ h2 {
   border-radius: 20px;
   box-shadow: 0px 6px 8px 0px rgb(220, 220, 220);
   margin: 15px 25px 25px 25px;
-  background: #f6f6f6;
+  background: rgb(248, 248, 248);
 }
 .fonctionnement__selection:hover {
   background-color: rgba(194, 180, 237, 0.3);
@@ -147,7 +150,7 @@ h2 {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: #f6f6f6;
+  background: rgb(248, 248, 248);
 }
 .restaurants__cards {
   width: 100%;
@@ -158,9 +161,7 @@ h2 {
 }
 .restaurants__cards a {
   width: 90%;
-  height: 280px;
-  align-content: space-around;
-  margin: 10px;
+  height: 225px;
 }
 .restaurants__card {
   border-radius: 15px;
@@ -169,7 +170,7 @@ h2 {
 }
 .restaurants__card--image {
   position: relative;
-  height: 200px;
+  height: 145px;
   border-radius: 15px 15px 0px 0px;
 }
 .restaurants__card--image img {
@@ -192,4 +193,31 @@ h2 {
   margin: 0;
   color: #278870;
   background: #99e2d0;
+}
+.restaurants__card--descriptif {
+  display: flex;
+  height: 20%;
+}
+.restaurants__card--descriptif--info {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 10%;
+  margin: 8px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.restaurants__card--descriptif--info1 {
+  margin: 0px;
+}
+.restaurants__card--descriptif--info2 {
+  margin: 0px;
+  font-weight: 300;
+}
+.restaurants__card--descriptif--heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  height: 60px;
 }/*# sourceMappingURL=style.css.map */

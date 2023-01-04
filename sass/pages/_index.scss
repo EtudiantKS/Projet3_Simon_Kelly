@@ -23,7 +23,7 @@
         text-align: center;
     }
     ::placeholder{
-        color: #000000;
+        color: $colour-black;
         font-size: 16px;
         font-weight: 500;
     }
@@ -56,6 +56,7 @@
 }
 /* Fonctionnement */
 .fonctionnement{
+    height: 360px;
     &__selection{
         width: 90%;
         height: 70px;
@@ -65,7 +66,7 @@
         border-radius: 20px;
         box-shadow: 0px 6px 8px 0px rgb(220, 220, 220);
         margin: 15px 25px 25px 25px;
-        background: #f6f6f6;
+        background: $colour-light-grey;
             &:hover{
                 background-color: rgba(194, 180, 237, 0.3);
                 i {
@@ -103,7 +104,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background:#f6f6f6;
+    background:$colour-light-grey;
         &__cards{
             width: 100%;
             height: 70%;
@@ -113,9 +114,7 @@
         }
         &__cards a {
             width: 90%;
-            height: 280px;
-            align-content: space-around;
-            margin: 10px;
+            height: 225px;
         }
         &__card {
             border-radius: 15px;
@@ -124,7 +123,7 @@
         }
         &__card--image{
             position: relative;
-            height: 200px;
+            height: 145px;
             border-radius: 15px 15px 0px 0px;
             
         }
@@ -148,4 +147,36 @@
             color: #278870;
             background: #99e2d0;
         }
+        &__card--descriptif{
+            display: flex;
+            height: 20%;
+        }
+        &__card--descriptif--info{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 10%;
+            margin: 8px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__card--descriptif--info1{
+            margin: 0px;
+        }
+        &__card--descriptif--info2{
+            margin: 0px;
+            font-weight: 300;
+        }
+        &__card--descriptif--heart{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15%;
+            height: 60px;
+
+        }
+
+
+
 }
