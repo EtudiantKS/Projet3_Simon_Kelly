@@ -34,22 +34,48 @@ h2 {
   font-size: 24px;
 }
 
+/* Header accueil */
 .header {
   width: 100%;
+  height: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  /* Header restaurant */
 }
 .header__logo {
   font-family: "Shrikhand", cursive;
   font-size: 30px;
   font-weight: 300;
+  margin: 0;
+}
+.header__restau {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__retour {
+  position: absolute;
+  left: 5%;
+  font-size: 19px;
+}
+.header__retour i {
+  color: rgba(0, 0, 0, 0.74);
+}
+
+/* Header restaurant image */
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 240px;
 }
 
 /* Footer */
 .footer {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.74);
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
@@ -100,17 +126,17 @@ h2 {
   text-align: center;
 }
 .localisation ::-moz-placeholder {
-  color: #000;
+  color: rgba(0, 0, 0, 0.74);
   font-size: 16px;
   font-weight: 500;
 }
 .localisation :-ms-input-placeholder {
-  color: #000;
+  color: rgba(0, 0, 0, 0.74);
   font-size: 16px;
   font-weight: 500;
 }
 .localisation ::placeholder {
-  color: #000;
+  color: rgba(0, 0, 0, 0.74);
   font-size: 16px;
   font-weight: 500;
 }
@@ -280,4 +306,29 @@ h2 {
   justify-content: center;
   width: 15%;
   height: 60px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -46px;
+  background-color: rgb(248, 248, 248);
+  border-radius: 25px 25px 0px 0px;
+}
+.menu__annonce {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px;
+}
+.menu__annonce--titre {
+  font-size: 26px;
+  font-family: "Shrikhand", cursive;
+  font-weight: 700;
+}
+.menu__annonce--heart {
+  font-size: 28px;
+  margin: 0px 28px 0px 28px;
 }/*# sourceMappingURL=style.css.map */

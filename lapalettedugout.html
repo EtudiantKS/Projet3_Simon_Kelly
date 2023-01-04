@@ -6,44 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood</title>
     <script src="https://kit.fontawesome.com/e1bae0e14a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./sass/style.css">
 </head>
 <body>
     <!--Header-->
     <header class="header">
-        <h1 class="header__logo">
-            ohmyfood
-        </h1>
+        <div class="header__restau">
+            <div class="header__retour">
+                <a href="./index.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </div>
+            <h1 class="header__logo">
+                ohmyfood
+            </h1>
+        </div>
     </header>
     <div class="head-img">
         <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image la palette du goût">
     </div>
     <!-- main -->
-    <main>
+    <main class="menu">
      <!-- section carte menu -->
-     <section class="global-menu">
+    <section class="menu__annonce">
         <!-- info -->
-        <div class="global-menu__info">
-            <h2>
+            <h2 class="menu__annonce--titre">
                 La palette du goût
             </h2>
-            <div class="heart">
+            <div class="menu__annonce--heart">
                 <i class="fa-regular fa-heart"></i>
             </div>
-        </div>
+    </section>
         <!-- type -->
-        <div class="global-menu__titre">
+        <div class="menu__type">
             <h3>
                 Entrées
             </h3>
         </div>
         <!-- section menu entrée -->
-        <section class="menu">
-            <div class="menu__choix">
+        <section class="menu__card">
+            <div class="menu__card--choix">
                 <a href="#">
                     <h4>
                         Fricassée d'escargot
                     </h4>
-                    <div class="menu__choix--descriptif">
+                    <div class="menu__card--choix--descriptif">
                         <p>
                             Au piment d'Espelette 
                         </p>
@@ -51,17 +58,17 @@
                             25€
                         </span>
                     </div>
-                    <div class="menu__choix--descriptif--valid">
+                    <div class="menu__card--choix--descriptif--valid">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </a>
             </div>
-            <div class="menu__choix">
+            <div class="menu__card--choix">
                 <a href="#">
                     <h4>
                         Foie gras de canard mi-cuit
                     </h4>
-                    <div class="menu__choix--descriptif">
+                    <div class="menu__card--choix--descriptif">
                         <p>
                             Et ses copeaux de truffe noire
                         </p>
@@ -69,17 +76,17 @@
                             35€
                         </span>
                     </div>
-                    <div class="menu__choix--descriptif--valid">
+                    <div class="menu__card--choix--descriptif--valid">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </a>
             </div>
-            <div class="menu__choix">
+            <div class="menu__card--choix">
                 <a href="#">
                     <h4>
                         Œuf au plat
                     </h4>
-                    <div class="menu__choix--descriptif">
+                    <div class="menu__card--choix--descriptif">
                         <p>
                             Assaisonné à la truffe sur lit de caviar
                         </p>
@@ -87,26 +94,26 @@
                             20€
                         </span>
                     </div>
-                    <div class="menu__choix--descriptif--valid">
+                    <div class="menu__card--choix--descriptif--valid">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </a>
             </div>
         </section>
         <!-- type -->
-        <div class="global-menu__titre">
+        <div class="menu__type">
             <h3>
                 Plats
             </h3>
         </div>
         <!-- section menu plat -->
-        <section class="menu">
-            <div class="menu__choix">
+        <section class="menu__card">
+            <div class="menu__card--choix">
                 <a href="#">
                     <h4>
                         Filet de boeuf aux herbes
                     </h4>
-                    <div class="menu__choix--descriptif">
+                    <div class="menu__card--choix--descriptif">
                         <p>
                             Accompagné de sa ribambelle de légumes
                         </p>
@@ -114,17 +121,17 @@
                             40€
                         </span>
                     </div>
-                    <div class="menu__choix--descriptif--valid">
+                    <div class="menu__card--choix--descriptif--valid">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </a>
             </div>
-            <div class="menu__choix">
+            <div class="menu__card--choix">
                 <a href="#">
                     <h4>
                         Parmentier de queue de boeuf
                     </h4>
-                    <div class="menu__choix--descriptif">
+                    <div class="menu__card--choix--descriptif">
                         <p>
                             À la truffe noire sur sa purée de panais
                         </p>
@@ -132,17 +139,17 @@
                             35€
                         </span>
                     </div>
-                    <div class="menu__choix--descriptif--valid">
+                    <div class="menu__card--choix--descriptif--valid">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </a>
             </div>
-            <div class="menu__choix">
+            <div class="menu__card--choix">
                 <a href="#">
                     <h4>
                         Filet de turbot
                     </h4>
-                    <div class="menu__choix--descriptif">
+                    <div class="menu__card--choix--descriptif">
                         <p>
                             Aux agrumes
                         </p>
@@ -150,26 +157,26 @@
                             44€
                         </span>
                     </div>
-                    <div class="menu__choix--descriptif--valid">
+                    <div class="menu__card--choix--descriptif--valid">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </a>
             </div>
         </section>
         <!-- type -->
-        <div class="global-menu__titre">
+        <div class="menu__type">
             <h3>
                 Desserts
             </h3>
         </div>
         <!-- section menu plat -->
-        <section class="menu">
-            <div class="menu__choix">
+        <section class="menu__card">
+            <div class="menu__card--choix">
                 <a href="#">
                     <h4>
                         Paris-Brest
                     </h4>
-                    <div class="menu__choix--descriptif">
+                    <div class="menu__card--choix--descriptif">
                         <p>
                             Revisité
                         </p>
@@ -177,17 +184,17 @@
                             18€
                         </span>
                     </div>
-                    <div class="menu__choix--descriptif--valid">
+                    <div class="menu__card--choix--descriptif--valid">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </a>
             </div>
-            <div class="menu__choix">
+            <div class="menu__card--choix">
                 <a href="#">
                     <h4>
                         Macaron au chocolat d'exception 
                     </h4>
-                    <div class="menu__choix--descriptif">
+                    <div class="menu__card--choix--descriptif">
                         <p>
                             Et glace à la vanille de Madagascar
                         </p>
@@ -195,17 +202,17 @@
                             22€
                         </span>
                     </div>
-                    <div class="menu__choix--descriptif--valid">
+                    <div class="menu__card--choix--descriptif--valid">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </a>
             </div>
-            <div class="menu__choix">
+            <div class="menu__card--choix">
                 <a href="#">
                     <h4>
                         Mousse au chocolat 
                     </h4>
-                    <div class="menu__choix--descriptif">
+                    <div class="menu__card--choix--descriptif">
                         <p>
                             Au piment d'Espelette et à la truffe noire
                         </p>
@@ -213,13 +220,12 @@
                             23€  
                         </span>
                     </div>
-                    <div class="menu__choix--descriptif--valid">
+                    <div class="menu__card--choix--descriptif--valid">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </a>
             </div>
         </section>
-     </section>   
     </main>
     <!--Footer-->
     <footer>
@@ -231,20 +237,20 @@
                         <div class="footer__menu--icone">
                             <i class="fa-solid fa-utensils"></i>
                         </div>
-                        <h4>Proposer un restaurant</h4>
+                        <h3>Proposer un restaurant</h3>
                     </li>
                     <li class="footer__menu">
                         <div class="footer__menu--icone">
                             <i class="fa-solid fa-handshake-angle"></i>
                         </div>
-                        <h4>Devenir partenaire</h4>
+                        <h3>Devenir partenaire</h3>
                     </li>
                     <li class="footer__menu">
-                        <h4>Mentions légales</h4>
+                        <h3>Mentions légales</h3>
                     </li>
                     <li class="footer__menu">
                         <a href="mailto:contact@ohmyfood.com">
-                            <h4>Contact</h4>
+                            <h3>Contact</h3>
                         </a>
                     </li>
                 </ul>
