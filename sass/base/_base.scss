@@ -4,6 +4,11 @@
   color: #000000;
   }
 
+body{
+  width: 100%;
+  margin: 0;  
+  }
+
 #bloc-page{
   max-width: 1440px;
   margin-left: auto;
@@ -11,15 +16,15 @@
 }
 
  
- a {
-    text-decoration: none;
-      &:visited{
-        color: #000000;
+a{
+  text-decoration: none;
+    &:visited{
+      color: #000000;
       }
   }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px 20px 10px;
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 20px 10px;
   }
