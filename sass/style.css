@@ -47,6 +47,7 @@ h2 {
   font-weight: 300;
 }
 
+/* Footer */
 .footer {
   background-color: #000;
 }
@@ -124,10 +125,15 @@ h2 {
   text-align: center;
   background-color: rgb(248, 248, 248);
 }
+.description__titre {
+  width: 80%;
+  margin-bottom: 0;
+}
 .description__texte {
   width: 90%;
   font-size: 18px;
   font-weight: 300;
+  margin-bottom: 30px;
 }
 .description__button-menu {
   color: #FFF;
@@ -143,9 +149,10 @@ h2 {
   height: 360px;
 }
 .fonctionnement h2 {
-  width: 60%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin-left: 14px;
 }
 .fonctionnement__selection {
   width: 90%;
@@ -186,6 +193,7 @@ h2 {
   padding: 0px 10px;
 }
 
+/* Restaurant */
 .restaurants {
   width: 100%;
   height: 100%;
@@ -195,9 +203,10 @@ h2 {
   padding: 0px 0px 40px;
 }
 .restaurants h2 {
-  width: 48%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin-left: 14px;
 }
 .restaurants__cards {
   width: 100%;
@@ -230,7 +239,7 @@ h2 {
 .restaurants__card--image p {
   position: absolute;
   text-align: center;
-  width: 23%;
+  width: 15%;
   top: 7%;
   right: 3%;
   font-size: 10px;
