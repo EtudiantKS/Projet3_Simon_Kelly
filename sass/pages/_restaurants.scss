@@ -121,6 +121,10 @@
         justify-content: center;
         align-items: center;
         margin: 30px 106px 30px 106px;
+
+    }
+    
+    &__button--commander{
         background: linear-gradient(-5deg, $colour-primary 2%, #b35cdc, #cf64dc, #e86edb, $colour-secondary);
         font-size: 16px;
         border-radius: 25px;
@@ -130,9 +134,6 @@
             opacity: 0.7;
             box-shadow: 0px 6px 8px 0px darken($color:grey, $amount: 60%);
         }
-    }
-    
-    &__button--commander{
             color: $colour-white;
         }
 }

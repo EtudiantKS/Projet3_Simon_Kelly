@@ -417,16 +417,16 @@ img {
   justify-content: center;
   align-items: center;
   margin: 30px 106px 30px 106px;
+}
+.menu__button--commander {
   background: linear-gradient(-5deg, #9356DC 2%, #b35cdc, #cf64dc, #e86edb, #ff79da);
   font-size: 16px;
   border-radius: 25px;
   box-shadow: 0px 6px 8px 0px grey;
   padding: 15px 25px 15px 25px;
+  color: #FFF;
 }
-.menu__button:hover {
+.menu__button--commander:hover {
   opacity: 0.7;
   box-shadow: 0px 6px 8px 0px black;
-}
-.menu__button--commander {
-  color: #FFF;
 }/*# sourceMappingURL=style.css.map */
