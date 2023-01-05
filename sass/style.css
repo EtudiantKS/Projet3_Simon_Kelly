@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Button dégradé */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
@@ -163,11 +165,11 @@ img {
 }
 .description__button-menu {
   color: #FFF;
-  background: linear-gradient(-5deg, #9356DC 2%, #b35cdc, #cf64dc, #e86edb, #ff79da);
   font-size: 16px;
   border-radius: 25px;
   box-shadow: 0px 6px 8px 0px grey;
   padding: 15px 25px 15px 25px;
+  background: linear-gradient(-5deg, #9356DC 2%, #b35cdc, #cf64dc, #e86edb, #ff79da);
 }
 .description__button-menu:hover {
   opacity: 0.7;
@@ -175,9 +177,6 @@ img {
 }
 
 /* Fonctionnement */
-.fonctionnement {
-  height: 360px;
-}
 .fonctionnement h2 {
   width: 100%;
   display: flex;
@@ -419,12 +418,12 @@ img {
   margin: 30px 106px 30px 106px;
 }
 .menu__button--commander {
-  background: linear-gradient(-5deg, #9356DC 2%, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  color: #FFF;
   font-size: 16px;
   border-radius: 25px;
   box-shadow: 0px 6px 8px 0px grey;
   padding: 15px 25px 15px 25px;
-  color: #FFF;
+  background: linear-gradient(-5deg, #9356DC 2%, #b35cdc, #cf64dc, #e86edb, #ff79da);
 }
 .menu__button--commander:hover {
   opacity: 0.7;

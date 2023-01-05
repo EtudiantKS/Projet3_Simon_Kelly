@@ -1,4 +1,65 @@
 @mixin flex-center {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+
+/* Button dégradé */
+@mixin btn{
+    color: $colour-white;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: 0px 6px 8px 0px grey;
+    padding: 15px 25px 15px 25px;
+    &:hover{
+        opacity: 0.7;
+        box-shadow: 0px 6px 8px 0px darken($color:grey, $amount: 60%);
+    }
+}
+
+@mixin btn_dégradé{
+    background: linear-gradient(-5deg, $colour-primary 2%, #b35cdc, #cf64dc, #e86edb, $colour-secondary);
+}
+
+
+@mixin tuto{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 6px 8px 0px rgb(220, 220, 220);
+    margin: 15px 25px 25px 25px;
+    background: $colour-light-grey;
+        &:hover{
+            background-color: rgba(194, 180, 237, 0.3);
+            i {
+                color: $colour-primary;
+            }
+        }
+
+        &--nombre{
+        position: absolute;
+        top: 23px;
+        left: -15px;
+        background-color: $colour-primary;
+        color: $colour-white;
+        border-radius: 50px;
+        font-size: 12px;
+        padding: 5px 9px 5px 9px;
+        }
+
+        &--icone{
+            font-size: large;
+            padding: 0px 30px;
+        }
+        &--icone i {
+            color: darken($colour-light-grey, 50%);
+        }
+        &--texte{
+            font-size: 12px;
+            padding: 0px 10px;
+        }
 }
