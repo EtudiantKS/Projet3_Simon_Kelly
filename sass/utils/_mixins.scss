@@ -63,3 +63,18 @@
             padding: 0px 10px;
         }
 }
+
+@mixin heart {
+    .fa-heart {
+        color: $colour-black;
+        font-size: 25px;
+        font-weight: 100;
+        &:hover{
+            animation: fill 0.7s ease-in-out ;
+            background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+            background-clip: text;
+            font-weight: bold;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}    

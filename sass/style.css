@@ -306,6 +306,20 @@ img {
   width: 15%;
   height: 60px;
 }
+.restaurants__card--descriptif--heart .fa-heart {
+  color: rgba(0, 0, 0, 0.74);
+  font-size: 25px;
+  font-weight: 100;
+}
+.restaurants__card--descriptif--heart .fa-heart:hover {
+  -webkit-animation: fill 0.7s ease-in-out;
+          animation: fill 0.7s ease-in-out;
+  background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+}
 
 .menu {
   width: 100%;
@@ -331,6 +345,20 @@ img {
 .menu__annonce--heart {
   font-size: 28px;
   margin: 0px 28px 0px 28px;
+}
+.menu__annonce--heart .fa-heart {
+  color: rgba(0, 0, 0, 0.74);
+  font-size: 25px;
+  font-weight: 100;
+}
+.menu__annonce--heart .fa-heart:hover {
+  -webkit-animation: fill 0.7s ease-in-out;
+          animation: fill 0.7s ease-in-out;
+  background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
 }
 .menu__type {
   width: 38px;
