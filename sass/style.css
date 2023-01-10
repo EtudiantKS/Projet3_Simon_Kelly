@@ -3,9 +3,33 @@
 /* Button dégradé */
 /* Fonctionnement*/
 /* Coeur*/
-/* Menu Restaurant */
+/* Responsive*/
+/* Heart */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@-webkit-keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Menu Restaurant */
 @-webkit-keyframes view {
   from {
     opacity: 0;
@@ -107,6 +131,18 @@ img {
   font-weight: 270;
   padding: 10px 20px 10px;
 }
+@media screen and (min-width: 992px) {
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+}
 .footer__menu {
   display: flex;
   align-items: center;
@@ -123,6 +159,24 @@ img {
 }
 .footer__menu--icone i {
   color: #FFF;
+}
+@media screen and (min-width: 992px) {
+  .footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    min-height: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    min-height: 60px;
+  }
 }
 
 /* Loader*/
@@ -205,6 +259,24 @@ img {
   justify-content: flex-start;
   margin-left: 14px;
 }
+@media screen and (min-width: 992px) {
+  .fonctionnement h2 {
+    justify-content: center;
+  }
+  .fonctionnement__selectionall {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement__selectionall {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .fonctionnement__selection {
   width: 90%;
   height: 70px;
@@ -244,6 +316,16 @@ img {
   font-size: 12px;
   padding: 0px 10px;
 }
+@media screen and (min-width: 992px) {
+  .fonctionnement__selection {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement__selection {
+    width: 60%;
+  }
+}
 
 /* Restaurant */
 .restaurants {
@@ -254,11 +336,22 @@ img {
   background: rgb(248, 248, 248);
   padding: 0px 0px 40px;
 }
+@media screen and (min-width: 992px) {
+  .restaurants {
+    display: flex;
+    justify-content: center;
+  }
+}
 .restaurants h2 {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   margin-left: 14px;
+}
+@media screen and (min-width: 992px) {
+  .restaurants h2 {
+    justify-content: center;
+  }
 }
 .restaurants__cards {
   width: 100%;
@@ -267,9 +360,35 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (min-width: 992px) {
+  .restaurants__cards {
+    height: 80%;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2px 5px 0px 5px;
+  }
+}
 .restaurants__cards a {
   width: 94%;
   height: 225px;
+}
+@media screen and (min-width: 992px) {
+  .restaurants__cards a {
+    width: 45%;
+    margin: 27px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurants__cards a {
+    width: 47%;
+  }
 }
 .restaurants__card {
   border-radius: 15px;
@@ -292,8 +411,8 @@ img {
   position: absolute;
   text-align: center;
   width: 15%;
-  top: 7%;
-  right: 3%;
+  top: 0%;
+  right: 0%;
   font-size: 10px;
   font-weight: 500;
   border-radius: 2px;
@@ -301,6 +420,7 @@ img {
   margin: 0;
   color: #278870;
   background: #99e2d0;
+  transform: translate(-12px, 15px);
 }
 .restaurants__card--descriptif {
   display: flex;
@@ -335,8 +455,8 @@ img {
   font-weight: 100;
 }
 .restaurants__card--descriptif--heart .fa-heart:hover {
-  -webkit-animation: fill 0.7s ease-in-out;
-          animation: fill 0.7s ease-in-out;
+  -webkit-animation: fill 0.9s ease-in-out;
+          animation: fill 0.9s ease-in-out;
   background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
           background-clip: text;
@@ -375,8 +495,8 @@ img {
   font-weight: 100;
 }
 .menu__annonce--heart .fa-heart:hover {
-  -webkit-animation: fill 0.7s ease-in-out;
-          animation: fill 0.7s ease-in-out;
+  -webkit-animation: fill 0.9s ease-in-out;
+          animation: fill 0.9s ease-in-out;
   background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
           background-clip: text;

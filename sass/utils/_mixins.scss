@@ -48,7 +48,6 @@
                 color: $colour-primary;
             }
         }
-
         &--nombre{
         position: absolute;
         top: 0px;
@@ -60,7 +59,6 @@
         padding: 5px 9px 5px 9px;
         transform: translate(-11px, 23px);
         }
-
         &--icone{
             font-size: large;
             padding: 0px 30px;
@@ -74,6 +72,8 @@
         }
 }
 
+
+
 /* Coeur*/
 @mixin heart {
     .fa-heart {
@@ -81,7 +81,7 @@
         font-size: 25px;
         font-weight: 100;
         &:hover{
-            animation: fill 0.7s ease-in-out ;
+            animation: fill 0.9s ease-in-out ;
             background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
             background-clip: text;
             font-weight: bold;
@@ -110,3 +110,22 @@
             
     }
 }
+
+/* Responsive*/
+
+@mixin media-max($_max-width) {
+    @media screen and (max-width: $_max-width) {
+        &{ @content; }
+    }
+}
+@mixin media-min($_min-width) {
+    @media screen and (min-width: $_min-width) {
+        &{ @content; }
+    }
+}
+@mixin media-inter($_min-width,$_max-width) {
+    @media screen and (min-width: $_min-width) and (max-width: $_max-width) {
+        &{ @content; }
+    }
+}
+    

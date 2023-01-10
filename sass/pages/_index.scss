@@ -66,16 +66,44 @@
 /* Fonctionnement */
 .fonctionnement{
 
-     & h2{
+    & h2{
         width: 100%;
         display: flex;
         justify-content: flex-start;
         margin-left: 14px;
         }
+        @include media-min($desktop){
+            & h2{
+                justify-content: center
+            }
+            &__selectionall{
+                display: flex;
+                width: 100%;
+                justify-content: center
+            }
+        }
+
+        @include media-min($tablet){
+            &__selectionall{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+
         &__selection{
         @include tuto;
+        @include media-min ($desktop){
+            width: 25%;
         }
-}
+        @include media-min ($tablet){
+            width: 60%;
+        }
+        }
+    }
+
 /* Restaurant */
 .restaurants{
     width: 100%;
@@ -84,11 +112,18 @@
     flex-direction: column;
     background:$colour-light-grey;
     padding: 0px 0px 40px;
+    @include media-min ($desktop){
+        display: flex;
+        justify-content: center;
+    }
     & h2{
         width: 100%;
         display: flex;
         justify-content: flex-start;
         margin-left: 14px;
+        @include media-min ($desktop){
+            justify-content: center;
+        }
         }
         &__cards{
             width: 100%;
@@ -96,10 +131,28 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            @include media-min ($desktop){
+                height: 80%;
+                justify-content: space-around;
+            }
+            @include media-min ($tablet){
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                margin: 2px 5px 0px 5px;
+            }
         }
         &__cards a {
             width: 94%;
             height: 225px;
+            @include media-min ($desktop){
+                width: 45%;
+                margin: 27px;
+            }
+            @include media-min ($tablet){
+                width: 47%;
+            }
         }
         &__card {
             border-radius: 15px;
@@ -122,8 +175,8 @@
             position: absolute;
             text-align: center;
             width: 15%;
-            top: 7%;
-            right: 3%;
+            top: 0%;
+            right: 0%;
             font-size: 10px;
             font-weight: 500;
             border-radius: 2px;
@@ -131,6 +184,7 @@
             margin: 0;
             color: #278870;
             background: #99e2d0;
+            transform: translate(-12px, 15px);
         }
         &__card--descriptif{
             display: flex;
