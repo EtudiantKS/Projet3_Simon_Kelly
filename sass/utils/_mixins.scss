@@ -1,3 +1,11 @@
+/* Loader à faire */
+@mixin loader{
+    
+}
+
+
+
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -22,6 +30,7 @@
     background: linear-gradient(-5deg, $colour-primary 2%, #b35cdc, #cf64dc, #e86edb, $colour-secondary);
 }
 
+/* Fonctionnement*/
 
 @mixin tuto{
     width: 90%;
@@ -42,13 +51,14 @@
 
         &--nombre{
         position: absolute;
-        top: 23px;
-        left: -15px;
+        top: 0px;
+        left: 0px;
         background-color: $colour-primary;
         color: $colour-white;
         border-radius: 50px;
         font-size: 12px;
         padding: 5px 9px 5px 9px;
+        transform: translate(-11px, 23px);
         }
 
         &--icone{
@@ -64,6 +74,7 @@
         }
 }
 
+/* Coeur*/
 @mixin heart {
     .fa-heart {
         color: $colour-black;

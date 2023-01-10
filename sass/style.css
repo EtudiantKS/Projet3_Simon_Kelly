@@ -1,7 +1,27 @@
 @charset "UTF-8";
+/* Loader à faire */
 /* Button dégradé */
+/* Fonctionnement*/
+/* Coeur*/
+/* Menu Restaurant */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@-webkit-keyframes view {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes view {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto";
@@ -105,6 +125,8 @@ img {
   color: #FFF;
 }
 
+/* Loader*/
+/* Header */
 /* Localisation*/
 .localisation {
   width: 100%;
@@ -202,13 +224,14 @@ img {
 }
 .fonctionnement__selection--nombre {
   position: absolute;
-  top: 23px;
-  left: -15px;
+  top: 0px;
+  left: 0px;
   background-color: #9356DC;
   color: #FFF;
   border-radius: 50px;
   font-size: 12px;
   padding: 5px 9px 5px 9px;
+  transform: translate(-11px, 23px);
 }
 .fonctionnement__selection--icone {
   font-size: large;
@@ -390,6 +413,37 @@ img {
   line-height: 1.5em;
   padding: 12px 12px 11px 9px;
   margin: 7px 0px 7px 0px;
+  -webkit-animation: 0.3s ease-out both, view 2s both;
+          animation: 0.3s ease-out both, view 2s both;
+}
+.menu__card--choix:hover.menu__card--choix--descriptif {
+  width: 83%;
+  transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);
+}
+.menu__card--choix:hover.menu__card--choix--descriptif--valid {
+  opacity: 1;
+  transform: translate(-45px);
+  transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);
+}
+.menu__card--choix:hover.fa-circle-check {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
+}
+.menu__card--choix:nth-child(1) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.menu__card--choix:nth-child(2) {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+.menu__card--choix:nth-child(3) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+.menu__card--choix:nth-child(3) {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 .menu__card--choix h4 {
   width: 85%;
@@ -408,7 +462,7 @@ img {
   line-height: 1.5em;
 }
 .menu__card--choix--descriptif p {
-  width: 80%;
+  width: 71%;
   font-weight: 350;
   font-size: 15px;
   margin: 0;
