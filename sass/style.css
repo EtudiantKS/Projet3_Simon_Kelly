@@ -416,22 +416,22 @@ img {
   -webkit-animation: 0.3s ease-out both, view 2s both;
           animation: 0.3s ease-out both, view 2s both;
 }
-.menu__card--choix:hover.menu__card--choix--descriptif {
+.menu__card--choix:nth-child(1) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.menu__card--choix:nth-child(1):hover .menu__card--choix:hover--descriptif {
   width: 83%;
   transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);
 }
-.menu__card--choix:hover.menu__card--choix--descriptif--valid {
+.menu__card--choix:nth-child(1):hover .menu__card--choix:hover--descriptif--valid {
   opacity: 1;
   transform: translate(-45px);
   transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);
 }
-.menu__card--choix:hover.fa-circle-check {
+.menu__card--choix:nth-child(1):hover .menu__card--choix:hover.fa-circle-check {
   transform: rotate(360deg);
   transition: transform 500ms ease-in-out;
-}
-.menu__card--choix:nth-child(1) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
 }
 .menu__card--choix:nth-child(2) {
   -webkit-animation-delay: 900ms;
