@@ -35,7 +35,7 @@
             color: $colour-white;
         }
         }
-}
+    }
     & ul{
         @include media-min ($desktop){
             display: flex;

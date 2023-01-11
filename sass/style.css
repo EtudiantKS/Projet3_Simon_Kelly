@@ -673,22 +673,42 @@ img {
   -webkit-animation: 0.3s ease-out both, view 2s both;
           animation: 0.3s ease-out both, view 2s both;
 }
-.menu__card--choix:nth-child(1) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+.menu__card--choix:hover h4 {
+  width: 64%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.menu__card--choix:nth-child(1):hover .menu__card--choix:hover--descriptif {
+.menu__card--choix:hover.menu__card--choix--descriptif--valid {
+  opacity: 1;
+  transform: translate(-3rem);
+  transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);
+}
+.menu__card--choix:hover.fa-circle-check {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
+}
+.menu__card--choix:hover.menu__card--choix--descriptif {
   width: 83%;
   transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);
 }
-.menu__card--choix:nth-child(1):hover .menu__card--choix:hover--descriptif--valid {
-  opacity: 1;
-  transform: translate(-45px);
-  transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);
+.menu__card--choix:hover p {
+  width: 82%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.menu__card--choix:nth-child(1):hover .menu__card--choix:hover.fa-circle-check {
-  transform: rotate(360deg);
-  transition: transform 500ms ease-in-out;
+.menu__card--choix h4 {
+  width: 85%;
+  height: 22px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu__card--choix:nth-child(1) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 .menu__card--choix:nth-child(2) {
   -webkit-animation-delay: 900ms;
@@ -701,16 +721,6 @@ img {
 .menu__card--choix:nth-child(3) {
   -webkit-animation-delay: 1500ms;
           animation-delay: 1500ms;
-}
-.menu__card--choix h4 {
-  width: 85%;
-  height: 22px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .menu__card--choix--descriptif {
   display: flex;
