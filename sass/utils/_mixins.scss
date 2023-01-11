@@ -153,25 +153,24 @@
     }
 }    
 
+/* Animation restaurant valide*/
 @mixin check{
-    .menu__card--choix{
-        &:hover{
-        &--descriptif{
-            width: 83%;
-            transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);}
-
-        &--descriptif--valid{
-            opacity: 1;
-            transform: translate(-45px);
-            transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);}
-
-        &.fa-circle-check {  
-            transform: rotate(360deg);
-            transition: transform 500ms ease-in-out;}
-                
-        }
-            
+    .menu__card--choix--descriptif--valid{
+        opacity: 1;
+        transform: translate(-3rem);
+        transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);
     }
+
+    .menu__card--choix--descriptif{
+        width: 83%;
+        transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);
+    }
+
+    .fa-circle-check {  
+        transform: rotate(360deg);
+        transition: transform 500ms ease-in-out;
+    }
+            
 }
 
 /* Responsive*/
