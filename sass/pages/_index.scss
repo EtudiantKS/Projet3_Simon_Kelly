@@ -76,29 +76,17 @@
             & h2{
                 justify-content: center
             }
-            &__selectionall{
-                display: flex;
-                width: 100%;
-                justify-content: center
-            }
+        &__selectionall{
+            display: flex;
+            justify-content: space-around;
         }
-
-        @include media-min($tablet){
-            &__selectionall{
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-            }
         }
-
 
         &__selection{
         @include tuto;
-        @include media-min ($desktop){
-            width: 25%;
-        }
+        
         @include media-min ($tablet){
-            width: 60%;
+            width: 95%;
         }
         }
     }

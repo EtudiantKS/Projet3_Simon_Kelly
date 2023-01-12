@@ -392,15 +392,7 @@ img {
   }
   .fonctionnement__selectionall {
     display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .fonctionnement__selectionall {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
   }
 }
 .fonctionnement__selection {
@@ -442,14 +434,9 @@ img {
   font-size: 12px;
   padding: 0px 10px;
 }
-@media screen and (min-width: 992px) {
-  .fonctionnement__selection {
-    width: 25%;
-  }
-}
 @media screen and (min-width: 768px) {
   .fonctionnement__selection {
-    width: 60%;
+    width: 95%;
   }
 }
 
