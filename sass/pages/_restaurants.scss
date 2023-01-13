@@ -73,6 +73,7 @@
             line-height: 1.5em;
             padding: 12px 12px 11px 9px;
             margin: 7px 0px 7px 0px;
+            overflow: hidden;
             animation: 0.3s ease-out both, view 2s both;
             @include media-min($desktop) {
                 width: 90%;

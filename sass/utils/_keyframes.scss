@@ -1,15 +1,5 @@
 /* Loader */
-@keyframes grow {
-    0% {
-        transform: scale(0); opacity:0;
-    }
-    50% {
-        transform: scale(1); opacity:1;
-    }
-    100% {
-        transform: scale(0); opacity:0;
-    }
-}
+
 @keyframes loader{
     0% {
         opacity: 1;
@@ -21,6 +11,20 @@
         opacity: 0;
     }
 }
+
+
+@keyframes grow {
+    0% {
+        transform: scale(0); opacity:0;
+    }
+    50% {
+        transform: scale(1); opacity:1;
+    }
+    100% {
+        transform: scale(0); opacity:0;
+    }
+}
+
 
 /* Heart */
 
@@ -39,11 +43,14 @@
 
 /* Menu Restaurant */
 @keyframes view {
-    from{
+    0%{
         opacity:0;
     }
-    to {
-        opacity:1;
+    50% {
+        opacity:0,2;
+    }
+    100%{
+        opacity: 1;
     }
 
 }

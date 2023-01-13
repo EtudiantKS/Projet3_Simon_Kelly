@@ -74,7 +74,8 @@
         }
         @include media-min($desktop){
             & h2{
-                justify-content: center
+                justify-content: center;
+                margin-left: 0px;
             }
         &__selectionall{
             display: flex;
@@ -110,6 +111,7 @@
         margin-left: 14px;
         @include media-min ($desktop){
             justify-content: center;
+            margin-left: 0px;
         }
         }
         &__cards{
@@ -118,27 +120,27 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            @include media-min ($desktop){
-                height: 80%;
-                justify-content: space-around;
-            }
             @include media-min ($tablet){
                 flex-direction: row;
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-around;
-                margin: 2px 5px 0px 5px;
             }
+            @include media-min ($desktop){
+                height: 80%;
+                justify-content: space-around;
+            }
+
         }
         &__cards a {
             width: 94%;
             height: 225px;
-            @include media-min ($desktop){
-                width: 45%;
-                margin: 27px;
-            }
             @include media-min ($tablet){
                 width: 45%;
+            }
+            @include media-min ($desktop){
+                width: 40%;
+                margin: 27px;
             }
         }
         &__card {
