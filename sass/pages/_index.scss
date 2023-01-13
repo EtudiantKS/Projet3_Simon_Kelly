@@ -66,6 +66,12 @@
 /* Fonctionnement */
 .fonctionnement{
 
+    @include media-min($desktop){
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     & h2{
         width: 100%;
         display: flex;
@@ -78,8 +84,10 @@
                 margin-left: 0px;
             }
         &__selectionall{
+            width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            margin: 10px 15px 10px 15px;
         }
         }
 
@@ -89,10 +97,23 @@
         @include media-min ($tablet){
             width: 95%;
         }
+        @include media-min($desktop){
+            width: 25%;
+        }
         }
     }
 
 /* Restaurant */
+.main{
+    width: 100%;
+    height: 1300px;
+    @include media-min($tablet) {
+        height: 640px;
+      }
+      @include media-min($desktop) {
+        height: 765px;
+      }
+}
 .restaurants{
     width: 100%;
     height: 100%;
@@ -104,11 +125,11 @@
         display: flex;
         justify-content: center;
     }
-    & h2{
+        h2{
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        margin-left: 14px;
+        margin-left: 19px;
         @include media-min ($desktop){
             justify-content: center;
             margin-left: 0px;
@@ -116,7 +137,7 @@
         }
         &__cards{
             width: 100%;
-            height: 70%;
+            height: 95%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -133,8 +154,8 @@
 
         }
         &__cards a {
-            width: 94%;
-            height: 225px;
+            width: 90%;
+            height: 265px;
             @include media-min ($tablet){
                 width: 45%;
             }
@@ -147,10 +168,11 @@
             border-radius: 15px;
             background-color: $colour-white;
             box-shadow: 8px 5px 10px 5px #f0f2f6;
+            height: 100%;
         }
         &__card--image{
             position: relative;
-            height: 145px;
+            height: 72%;
             border-radius: 15px 15px 0px 0px;
             
         }
@@ -184,7 +206,7 @@
             flex-direction: column;
             width: 90%;
             height: 10%;
-            margin: 8px;
+            margin: 8px 12px 8px 12px;
             font-size: 16px;
             line-height: 24px;
         }
@@ -200,7 +222,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 15%;
+            width: 18%;
             height: 60px;
             @include heart;
             }

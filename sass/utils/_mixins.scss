@@ -85,12 +85,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 210px;
+    width: 220px;
     color: $colour-white;
-    font-size: 17px;
+    font-size: 16px;
     border-radius: 25px;
     box-shadow: 0px 6px 8px 0px grey;
-    padding: 18px 25px 18px 25px;
+    padding: 17px;
     &:hover{
         opacity: 0.7;
         box-shadow: 0px 6px 8px 0px darken($color:grey, $amount: 60%);
