@@ -82,11 +82,15 @@
 
 /* Button dégradé */
 @mixin btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
     color: $colour-white;
-    font-size: 16px;
+    font-size: 17px;
     border-radius: 25px;
     box-shadow: 0px 6px 8px 0px grey;
-    padding: 15px 25px 15px 25px;
+    padding: 18px 25px 18px 25px;
     &:hover{
         opacity: 0.7;
         box-shadow: 0px 6px 8px 0px darken($color:grey, $amount: 60%);
@@ -159,6 +163,9 @@
 
 /* Animation restaurant valide*/
 @mixin check{
+    & h4{
+        width: 60%;
+    }
     .menu__card--choix--descriptif--valid{
         opacity: 1;
         transform: translate(-3rem);
