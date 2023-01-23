@@ -1,10 +1,10 @@
-https---github.com-EtudiantKS-Projet3_simon_kelly  
+https://etudiantks.github.io/Projet3_Simon_Kelly/
 
 # Ohmyfood  
 Troisième projet du parcours « Développeur web » chez OpenClassroom.  
 L’objectif est d’intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass.  
 Vous retrouverez le brief complet [ici](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf)  
-Vous pouvez accèder au site en cliquant [ici](https://etudiantks.github.io/https---github.com-EtudiantKS-Projet3_simon_kelly/)  
+Vous pouvez accèder au site en cliquant [ici](https://etudiantks.github.io/Projet3_Simon_Kelly/)  
 
 ## Objectifs : 
 1.	Développer un site proposant le menu de 4 grands restaurants parisiens.  
